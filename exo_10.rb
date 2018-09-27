@@ -1,4 +1,14 @@
-def age(dob)
-  now = Time.now.utc.to_date
-  now.year - dob.year - ((now.month > dob.month || (now.month == dob.month && now.day >= dob.day)) ? 0 : 1)
+puts "Met ta date de naissance :"
+
+year_birth = gets.chomp.to_i
+age = 0
+
+while year_birth <= 2017
+
+year_birth += 1
+age += 1
+break if year_birth == 2017
+
 end
+
+puts "En" +" #{year_birth},"+ " " + "tu as "  + "#{age} " + "ans !"
